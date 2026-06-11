@@ -35,4 +35,4 @@ Total size ~760KB. Just static HTML + image assets.
 - Contact is a `mailto:` link to upstreaminitiative@outlook.com — no form backend needed.
 - Neither app links directly into the live app (by design):
   - Approach is deployed agency-by-agency → routes to contact.
-  - GrowAware is held for a possible fundraiser → "Publishing shortly" → routes to contact.
+  - GrowAware is held for a possible fundraiser → "Publishing shortly" → routes to contact..
