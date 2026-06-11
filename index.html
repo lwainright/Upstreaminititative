@@ -60,10 +60,16 @@
     padding:6px 14px;border-radius:99px;background:rgba(232,176,75,.14);color:#E8B04B;border:1px solid rgba(232,176,75,.35);margin-top:18px;align-self:flex-start;}
   .badge.live{background:rgba(87,199,212,.14);color:var(--teal);border-color:rgba(87,199,212,.35);}
 
-  /* education strip */
-  .edu{background:var(--navy2);border:1px solid var(--navy3);border-radius:18px;padding:34px 30px;margin:14px 0 40px;text-align:center;}
-  .edu h3{font-size:22px;font-weight:700;margin-bottom:10px;}
-  .edu p{font-size:15px;color:var(--mute);max-width:720px;margin:0 auto;}
+  /* education banner card */
+  .edu-card{display:block;background:var(--navy2);border:1px solid var(--navy3);border-radius:18px;overflow:hidden;text-decoration:none;color:inherit;transition:transform .2s,border-color .2s;margin-bottom:40px;}
+  .edu-card:hover{transform:translateY(-4px);border-color:var(--teal);}
+  .edu-img{width:100%;height:200px;overflow:hidden;}
+  .edu-img img{width:100%;height:100%;object-fit:cover;object-position:center 40%;}
+  .edu-body{padding:24px 28px 28px;}
+  .edu-body h3{font-size:22px;font-weight:700;margin-bottom:6px;}
+  .edu-body .who{font-size:13px;color:var(--teal);margin-bottom:12px;letter-spacing:.02em;font-weight:600;}
+  .edu-body p{font-size:15px;color:var(--mute);max-width:760px;}
+  .edu-body .cta{margin-top:16px;display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--sky);}
 
   /* contact */
   .contact{text-align:center;padding:24px 0 10px;}
@@ -127,8 +133,8 @@
 
       <!-- GrowAware -->
       <a class="card" href="growaware.html">
-        <div class="logo-area">
-          <img src="assets/growaware.png" alt="GrowAware">
+        <div class="logo-area" style="background:#4a9a55;">
+          <img src="assets/growaware.png" alt="GrowAware" style="object-fit:cover;">
         </div>
         <div class="body">
           <h3>GrowAware</h3>
@@ -142,10 +148,18 @@
     </div>
   </section>
 
-  <section class="edu" id="education">
-    <div class="label" style="margin-bottom:10px;">Education</div>
-    <h3>Going Upstream</h3>
-    <p>Recognition and early-intervention training that teaches teams to see the signs — and act before a hard stretch becomes a crisis. More details coming soon.</p>
+  <section id="education">
+    <div class="label">Education</div>
+    <h2 class="sechead">Going Upstream — the class</h2>
+    <a class="edu-card" href="going-upstream.html">
+      <div class="edu-img"><img src="assets/going-upstream.png" alt="A river running from calm water into rapids"></div>
+      <div class="edu-body">
+        <h3>Going Upstream in Mental Health</h3>
+        <div class="who">First Responder Edition</div>
+        <p>Hear the story of a 30-year first responder, and leave with practical tools to recognize when a teammate is struggling — and help them before it's a crisis.</p>
+        <span class="cta">Learn about the class →</span>
+      </div>
+    </a>
   </section>
 
   <section class="contact" id="contact">
